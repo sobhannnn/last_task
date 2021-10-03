@@ -17,3 +17,6 @@ class Otp(models.Model):
     code = models.CharField(default=random_digit, max_length=5)
     is_verify = models.BooleanField(default=False)
 
+
+
+
