@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #app
     'accounts',
+    'location',
     'graphene_django',
+    'django_filters',
+
 ]
 
 MIDDLEWARE = [

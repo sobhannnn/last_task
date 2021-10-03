@@ -44,7 +44,7 @@ class OtpNode(DjangoObjectType):
     class Meta:
         model = Otp
         filter_fields = ['code', 'id']
-        interface = (relay.Node, )
+        interfaces = (relay.Node, )
 
 class OtpInput(graphene.InputObjectType):
     user_id = graphene.ID()
@@ -78,7 +78,7 @@ class Query(graphene.ObjectType):
     all_users = DjangoFilterConnectionField(MyuserNode)
 
     otp = relay.Node.Field(OtpNode)
-    # all_otps = DjangoFilterConnectionField(OtpNode)
+    all_otps = DjangoFilterConnectionField(OtpNode)
 
 
 
