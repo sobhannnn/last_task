@@ -147,3 +147,6 @@ AUTHENTICATION_BACKENDS = [
     "graphql_jwt.backends.JSONWebTokenBackend",
     "django.contrib.auth.backends.ModelBackend",
 ]
+# superuserAdmin # 
+# user : sobhan #
+# pass : 1234 #
